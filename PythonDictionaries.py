@@ -143,3 +143,47 @@ thisdict = mydict
 print(thisdict)
 bendict = dict(mydict)
 print(bendict)
+
+#Python - Nested Dictionaries
+myfamily = {
+  "child1" : {
+    "name" : "Tobechukwu",
+    "year" : 2018
+  },
+  "child2" : {
+    "name" : "Chukwuebuka",
+    "year" : 2014
+  },
+  "child3" : {
+    "name" : "Chinaecherem",
+    "year" : 2012
+  }
+}
+
+print(myfamily)
+for x, y in myfamily.items():
+  print(x, y)
+  for y in x:
+    print(y)
+
+
+child11 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child12 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child13 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily1 = {
+  "child11" : child11,
+  "child12" : child12,
+  "child13" : child13
+}
+
+print(myfamily1)
