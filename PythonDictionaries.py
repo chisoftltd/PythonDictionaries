@@ -82,3 +82,25 @@ print(i)
 #Check if Key Exists
 if "year" in thisdict:
   print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+#Update Dictionary
+thisdict.update({"color": "darkblue"})
+print(thisdict)
+
+#Removing Items
+thisdict.pop("model")
+print(thisdict)
+
+thisdict.popitem()
+print(thisdict)
+
+#delete Dictionary
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+#del thisdict
+print(thisdict)
+thisdict.clear()
+print(thisdict)
