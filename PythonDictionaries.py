@@ -127,3 +127,19 @@ print()
 for x, y in thisdict.items():
   print(x, y)
 print()
+
+#Copy a Dictionary
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print(thisdict)
+print(mydict)
+mydict["Country"] = "Sweden"
+print(mydict)
+thisdict = mydict
+print(thisdict)
+bendict = dict(mydict)
+print(bendict)
